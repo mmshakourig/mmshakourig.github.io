@@ -14,7 +14,9 @@ export const homeContent = {
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/mmahdi-shakouri', icon: 'linkedin' },
     { name: 'Email', href: 'mailto:mahdi.shakouri@ubc.ca', icon: 'email' },
     { name: 'GitHub', href: 'https://github.com/mmshakourig', icon: 'github' },
-    { name: 'Google Scholar', href: 'https://scholar.google.com/citations?user=iFep8KoAAAAJ&hl=en&authuser=1&oi=ao', icon: 'scholar' }
+    { name: 'Scholar', href: 'https://scholar.google.com/citations?user=iFep8KoAAAAJ&hl=en&authuser=1&oi=ao', icon: 'scholar' },
+    // resume is a pdf file in the assets folder, link to it
+    { name: 'Resume', href: '/assets/resume.pdf', icon: 'resume' }
   ],
   highlights: [
     {

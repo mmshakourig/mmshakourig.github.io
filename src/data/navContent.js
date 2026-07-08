@@ -6,3 +6,4 @@ export const navItems = [
   { label: 'EngPhys', to: '/engphys' },
   { label: 'Readings', to: '/readings' }
 ];
+

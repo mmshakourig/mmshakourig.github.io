@@ -6,6 +6,8 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { navItems } from '../data/navContent';
 import { CloseIcon, MenuIcon } from './Icons';
 
+import { homeContent } from '../data/homeContent';
+
 import '../styles/Global.css';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -13,6 +15,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 // import paper resume icon from mui
 import DescriptionIcon from '@mui/icons-material/Description';
+// import a google scholar icon from mui
+import SchoolIcon from '@mui/icons-material/School';
 
 
 function SiteLayout({ children }) {
@@ -84,7 +88,7 @@ function SiteLayout({ children }) {
         <div className="footer-inner">
           <div className="footer-icons">
             <IconButton 
-              href="https://www.linkedin.com/in/mmahdi-shakouri/" 
+              href={homeContent.socials[0].href} 
               target="_blank" 
               // use the smallest icon zi
               aria-label="LinkedIn"
@@ -93,7 +97,7 @@ function SiteLayout({ children }) {
               <LinkedInIcon fontSize="inherit" />
             </IconButton>
             <IconButton 
-              href="https://github.com/mmshakourig" 
+              href={homeContent.socials[2].href} 
               target="_blank" 
               aria-label="GitHub"
               sx={{ color: 'var(--accent)', '&:hover': { opacity: 0.8 }, padding: 0, margin: 0, fontSize: 'inherit'}}
@@ -101,26 +105,36 @@ function SiteLayout({ children }) {
               <GitHubIcon fontSize="inherit" />
             </IconButton>
             <IconButton 
-              href="mailto:mshakouri@bccrc.com" 
-              aria-label="Contact"
+              href={homeContent.socials[1].href} 
+              target="_blank" 
+              aria-label="Email"
               // make the icon smaller and remove padding
               sx={{ color: 'var(--accent)', '&:hover': { opacity: 0.8 }, padding: 0, margin: 0, fontSize: 'inherit'}}
             >
               <EmailIcon fontSize="inherit" />
             </IconButton>
             <IconButton 
-              href="mailto:mshakouri@bccrc.com" 
-              aria-label="Contact"
+              href={homeContent.socials[3].href} 
+              target="_blank" 
+              aria-label="Google Scholar"
               // make the icon smaller and remove padding
+              sx={{ color: 'var(--accent)', '&:hover': { opacity: 0.8 }, padding: 0, margin: 0, fontSize: 'inherit'}}
+            >
+              <SchoolIcon fontSize="inherit" />
+            </IconButton>
+
+            <IconButton 
+              href={homeContent.socials[4].href} 
+              target="_blank" 
+              aria-label="Resume"
               sx={{ color: 'var(--accent)', '&:hover': { opacity: 0.8 }, padding: 0, margin: 0, fontSize: 'inherit'}}
             >
               <DescriptionIcon fontSize="inherit" />
             </IconButton>
-
             
           </div>
 
-          <Typography variant="body2" sx={{ color: 'var(--accent)', padding: '0.5rem', whiteSpace: 'nowrap', fontSize: 'inherit' }}>
+          <Typography variant="body2" sx={{ color: 'var(--accent)', padding: '0rem', whiteSpace: 'nowrap', fontSize: 'inherit' }}>
               © 2026 MMahdi Shakouri
           </Typography>
           
