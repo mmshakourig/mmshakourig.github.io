@@ -13,9 +13,7 @@ import '../styles/Global.css';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
-// import paper resume icon from mui
 import DescriptionIcon from '@mui/icons-material/Description';
-// import a google scholar icon from mui
 import SchoolIcon from '@mui/icons-material/School';
 
 
@@ -84,8 +82,13 @@ function SiteLayout({ children }) {
       <main className="site-main">{children}</main>
 
       <footer className="site-footer">
+        
         {/* make the box shorter */}
         <div className="footer-inner">
+          <Typography variant="body2" sx={{ color: 'var(--accent)', padding: '0rem', whiteSpace: 'nowrap', fontSize: 'inherit', fontFamily: 'var(--body)' }}>
+              © 2026 MMahdi Shakouri
+          </Typography>
+          
           <div className="footer-icons">
             <IconButton 
               href={homeContent.socials[0].href} 
@@ -134,9 +137,6 @@ function SiteLayout({ children }) {
             
           </div>
 
-          <Typography variant="body2" sx={{ color: 'var(--accent)', padding: '0rem', whiteSpace: 'nowrap', fontSize: 'inherit' }}>
-              © 2026 MMahdi Shakouri
-          </Typography>
           
         </div>
 

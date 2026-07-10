@@ -24,7 +24,7 @@ const socialIconMap = {
 function HomePage() {
   return (
     <section className="page home-page" aria-labelledby="home-title">
-      <div className="hero-grid">
+      {/* <div className="hero-grid">
         <aside className="hero-left">
           <img className="profile-image" src={profilePic} alt="Portrait of Mahdi Shakouri" />
         <h1 id="home-title">{homeContent.name}</h1>
@@ -39,7 +39,7 @@ function HomePage() {
 
       <section className="highlights-section" aria-labelledby="highlights-title">
         
-      </section>
+      </section> */}
 
 
     </section>
