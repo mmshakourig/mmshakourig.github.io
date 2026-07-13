@@ -1,8 +1,9 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import SiteLayout from './components/SiteLayout';
+
 import HomePage from './pages/Home';
 
-import ExperiencesPage from './pages/Experiences';
+// import ExperiencesPage from './pages/experiences';
 // import ProjectsPage from './pages/ProjectsPage';
 // import ReadingsPage from './pages/ReadingsPage';
 // import ReflectionsPage from './pages/ReflectionsPage';
@@ -13,7 +14,7 @@ function App() {
     <SiteLayout>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/experiences" element={<ExperiencesPage />} />
+        {/* <Route path="/experiences" element={<ExperiencesPage />} /> */}
         {/* <Route path="/projects" element={<ProjectsPage />} /> */}
         {/* <Route path="/reflections" element={<ReflectionsPage />} /> */}
         {/* <Route path="/engphys" element={<EngPhysPage />} /> */}

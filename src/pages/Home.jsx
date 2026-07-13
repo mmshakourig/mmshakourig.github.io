@@ -9,6 +9,8 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import SchoolIcon from '@mui/icons-material/School';
 import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+
 import { IconButton } from '@mui/material';
 
 import '../styles/Global.css';
@@ -42,12 +44,14 @@ function HomePage() {
           <img className="profile-image" src={profilePic} alt="Portrait of Mahdi Shakouri" />
           <div className="profile-text-group">
             <h1 className="name-title">{homeContent.name}</h1>
+
             <p className="hero-title">{homeContent.titleLines[0]}</p>
             <p className="hero-title">{homeContent.titleLines[1]}</p>
+            
           </div>
-          <div className="profile-text-group">
-              <p className="hero-subtitle">{homeContent.titleLines[2]}</p>
-              <p className="hero-subtitle">{homeContent.titleLines[3]}</p>
+          <div className="hero-subtitle">
+            <p>{homeContent.titleLines[2]}</p>
+            <p>{homeContent.titleLines[3]}</p>
           </div>
 
           <div className="profile-icons">
@@ -99,8 +103,8 @@ function HomePage() {
             ))}
           </div>
           <div className="hero-summary">
-            <h3 className="hero-summary-title"># Summary</h3>
-            <ul style={{ listStyleType: 'disc', paddingLeft: '2.5rem', lineHeight: '1.6', fontSize: '18px', color: 'var(--ink-1)' }}>
+            <h3># Summary</h3>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '2.5rem', lineHeight: '1.6', fontSize: 'inherit', color: 'var(--ink-1)' }}>
               {homeContent.summary.map((item, index) => (
                 <li key={index}>{item} </li>
               ))}
@@ -115,7 +119,27 @@ function HomePage() {
       </div>
 
       <section className="highlights-section" aria-labelledby="highlights-title">
-        
+        <div className="section-header">
+          <h3># Highlights</h3>
+        </div>
+
+      {/* change the grid from 4x2 to 3x2 */}
+        <div className="highlights-grid">
+          {homeContent.highlights.map((item) => (
+            <article key={item.title} className="highlight-card">
+              <p className="highlight-meta">
+                <span>{item.number}</span>
+                <span>{item.date}</span>
+              </p>
+              <h2>{item.title}</h2>
+              <p className="hero-subtitle"> {item.sneakPeak} </p>
+              <a href={item.href} className="card-link">
+                <span>Open page</span>
+                <ArrowOutwardIcon className="card-link-icon" />
+              </a>
+            </article>
+          ))}
+        </div>
       </section>
 
 
