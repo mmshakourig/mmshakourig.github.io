@@ -9,9 +9,9 @@ export const homeContent = {
     "My passion lies at the intersection of engineering, physics, machine learning, and medical technology, with a focus on developing innovative solutions that can improve patient care and outcomes."
   ],
   summary: [
-    'Graduate Research Assistant @ BC Cancer Research Institute',
-    'Prev. Algorithms Engineer @ Kardium',
-    'Interested in medical technologies, research workflows, and applied physics'
+    { text: 'Graduate Research Assistant @ ', comp: 'BC Cancer Research Institute', href: 'https://www.bccrc.ca/dept/io-programs/qurit/people/mahdi-shakouri' },
+    { text: 'Prev. Algorithms Engineer @ ', comp: 'Kardium Inc.', href: 'https://www.kardium.com/' },
+    { text: 'Teaching Assistant @ ', comp: 'UBC Dept. of Physics & Astronomy', href: 'https://www.physics.ubc.ca/' },
   ],
   socials: [
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/mmahdi-shakouri', icon: 'linkedin' },
