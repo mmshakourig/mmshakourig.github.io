@@ -4,7 +4,8 @@ import { Paper, IconButton, Typography, Box } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { navItems } from '../data/navContent';
-import { CloseIcon, MenuIcon } from './Icons';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 
 import { homeContent } from '../data/homeContent';
 

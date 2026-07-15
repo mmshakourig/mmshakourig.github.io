@@ -81,13 +81,19 @@ ul {
   margin: 0;
 }
 
+span {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
 h3 {
   font-family: var(--code);
   font-size: clamp(12px, 1.35rem, 22px);
   font-weight: 600;
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   /* margin-bottom: 0.5rem; */
 }
 

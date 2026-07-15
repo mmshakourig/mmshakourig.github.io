@@ -40,7 +40,7 @@ function ProjectsPage() {
               {/* <p className="card-description">{project.description}</p> */}
               <div className="card-skills">
                 {project.skills.map((skill, skillIndex) => (
-                  <span className="card-skill" key={skillIndex}>{skill}</span>
+                  <span key={skillIndex}>{skill}</span>
                 ))}
               </div>
             </footer>
