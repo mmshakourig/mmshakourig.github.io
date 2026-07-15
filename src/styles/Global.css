@@ -4,10 +4,10 @@
   --bg-0: #dbdcde;
   --bg-1: #ececed;
   --bg-2: #fafafa;
-  --surface: rgba(235, 230, 230, 0.418);
-  --surface-strong: rgba(209, 188, 188, 0.3);
+  --surface: rgba(235, 230, 230, 0.55);
+  --surface-strong: rgba(255, 245, 245, 0.65);
   --ink-0: #281f1f;
-  --ink-1: #433939;
+  --ink-1: rgb(40, 35, 30);
   --ink-w: #fdfdfd;
   --muted: #484040;
   --accent: #892430;
@@ -79,6 +79,7 @@ h4,
 p,
 ul {
   margin: 0;
+  color: var(--ink-1);
 }
 
 span {

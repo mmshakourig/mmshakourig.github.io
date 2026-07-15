@@ -42,8 +42,8 @@ function HomePage() {
 
         <div className="hero-profile">
           <img className="profile-image" src={profilePic} alt="Portrait of Mahdi Shakouri" />
+          <h1 className="name-title">{homeContent.name}</h1>
           <div className="profile-text-group">
-            <h1 className="name-title">{homeContent.name}</h1>
 
             <p className="hero-title">{homeContent.titleLines[0]}</p>
             <p className="hero-title">{homeContent.titleLines[1]}</p>

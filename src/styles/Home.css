@@ -7,7 +7,7 @@
 
 .hero-grid {
   display: grid;
-  align-items: start;
+  align-items: stretch;
   gap: 1.5rem;
   /* margin-top: 1rem; */
   grid-template-columns: 1fr minmax(0,2.5fr);
@@ -32,7 +32,7 @@
 .name-title {
   font-family: var(--heading);
   font-size: clamp(28px, 4vw, 32px);
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .hero-title {
   font-family: var(--body);
@@ -100,6 +100,7 @@
   font-family: var(--body);
   /* font-size: 1.05rem; */
   line-height: 1.5;
+  font-weight: 390;
   margin-bottom: .75rem;
 }
 .hero-summary {
@@ -112,28 +113,39 @@
   gap: 0.5rem;
 }
 
+@keyframes uncurlReveal {
+  0% {
+    clip-path: inset(0 100% 0 0); /* Hidden: cropped 100% from the right */
+    transform: scaleX(0.8);        /* Optional: slight squeeze for a "curl" feel */
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);    /* Fully visible */
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
 .transition-band {
   position: relative;
   overflow: hidden;
   height: clamp(4.5rem, 8vw, 6rem);
   border-radius: 999px;
-  box-shadow: 0 14px 32px rgba(46, 33, 32, 0.3);
+  overflow: hidden;               /* Ensure no bleed during animation */
+  transform-origin: left;         /* Ensures scale/transform happens from the left */
+  animation: uncurlReveal 3s cubic-bezier(0.4, 1, 0.5, 1) forwards;
+  /* box-shadow: 0 14px 32px rgba(46, 33, 32, 0.3); */
 }
 
-.transition-band::before,
+
+/* .transition-band::before,
 .transition-band::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.585), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(1px);
-  mix-blend-mode: screen;
+  
+} */
+
+.transition-band:hover {
+  filter: blur(1.5px) saturate(0.9) brightness(0.9);
 }
 
-.transition-band::after {
-  box-shadow: inset 0 0 24px rgba(20, 22, 25, 0.24);
-}
 .transition-band img {
   width: 100%;
   height: 100%;
