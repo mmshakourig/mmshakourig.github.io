@@ -1,10 +1,10 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import SiteLayout from './components/SiteLayout';
 
-import HomePage from './pages/Home';
+import HomePage from './pages/home';
+import ProjectsPage from './pages/projects';
 
 // import ExperiencesPage from './pages/experiences';
-// import ProjectsPage from './pages/ProjectsPage';
 // import ReadingsPage from './pages/ReadingsPage';
 // import ReflectionsPage from './pages/ReflectionsPage';
 // import EngPhysPage from './pages/EngPhysPage';
@@ -14,8 +14,7 @@ function App() {
     <SiteLayout>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/experiences" element={<ExperiencesPage />} /> */}
-        {/* <Route path="/projects" element={<ProjectsPage />} /> */}
+        <Route path="/projects" element={<ProjectsPage />} />
         {/* <Route path="/reflections" element={<ReflectionsPage />} /> */}
         {/* <Route path="/engphys" element={<EngPhysPage />} /> */}
         {/* <Route path="/readings" element={<ReadingsPage />} /> */}

@@ -13,8 +13,8 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import { IconButton } from '@mui/material';
 
-import '../styles/Global.css';
-import '../styles/Home.css';
+import '../styles/global.css';
+import '../styles/home.css';
 
 
 const socialIconMap = {
@@ -36,7 +36,7 @@ const socialNameMap = {
 
 function HomePage() {
   return (
-    <section className="page home-page" aria-labelledby="home-title">
+    <section className="home-page" aria-labelledby="home-title">
       
       <div className="hero-grid">
 
@@ -106,7 +106,15 @@ function HomePage() {
             <h3># Summary</h3>
             <ul style={{ listStyleType: 'disc', paddingLeft: '2.5rem', lineHeight: '1.6', fontSize: 'inherit', color: 'var(--ink-1)' }}>
               {homeContent.summary.map((item, index) => (
-                <li key={index}>{item} </li>
+                <li>
+                  {/* only hyperlink after @ sign in the text */}
+                  <span key={index}>{item.text}</span>
+                  
+                  <a key={index} href={item.href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                    {item.comp}
+                  </a>
+              
+                </li>
               ))}
             </ul>
           </div>

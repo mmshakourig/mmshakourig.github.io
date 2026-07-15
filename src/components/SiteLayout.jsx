@@ -8,7 +8,7 @@ import { CloseIcon, MenuIcon } from './Icons';
 
 import { homeContent } from '../data/homeContent';
 
-import '../styles/Global.css';
+import '../styles/global.css';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';

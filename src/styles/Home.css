@@ -1,5 +1,6 @@
 .home-page {
   display: grid;
+  padding: 1rem;
   gap: 1.5rem;
   animation: rise 480ms ease both;
 }
@@ -30,12 +31,12 @@
 
 .name-title {
   font-family: var(--heading);
-  font-size: 32px;
+  font-size: clamp(28px, 4vw, 32px);
   margin-bottom: 1rem;
 }
 .hero-title {
   font-family: var(--body);
-  font-size: 20px;
+  font-size: clamp(16px, 2.5vw, 20px);
   color: var(--muted);
   margin-bottom: 2px;
 }
@@ -71,23 +72,6 @@
   /* margin-top: 0.75rem; */
 }
 
-/* Mobile: ensure grid is active */
-/* @media (max-width: 986px) {
-  .hero-left .hero-profile {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 1.5rem;
-    text-align: left;
-  }
-  
-  .hero-left .hero-profile .profile-image {
-    grid-row: 1 / span 2;
-    width: 100px;
-    height: 100px;
-  }
-} */
-
 .hero-right {
   display: flex;
   flex-direction: column;
@@ -96,7 +80,7 @@
   padding: 1rem;
   font-family: var(--body);
   color: var(--ink-1);
-  font-size: clamp(12px, 1.25em, 17px);
+  font-size: clamp(14px, 1.2em, 17px);
   font-weight: 380;
   /* background: linear-gradient(90deg, var(--accent), var(--accent-2)); */
   background-color: var(--surface);
@@ -160,19 +144,27 @@
 
 .highlights-section {
   display: grid;
-  gap: 0.75rem;
+  gap: 1rem;
   /* padding: 1rem 0; */
 }
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.85rem;
+  gap: 1rem;
   /* text-align: center; */
   align-self: stretch;
 }
 @media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    animation: rise 1s ease both;
+    gap: 1rem;
+  }
   .highlights-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .name-title {
+    margin-bottom: 0.2rem;
   }
 }
 .highlight-card {

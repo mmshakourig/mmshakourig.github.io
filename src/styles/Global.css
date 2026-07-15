@@ -3,10 +3,12 @@
 :root {
   --bg-0: #dbdcde;
   --bg-1: #ececed;
+  --bg-2: #fafafa;
   --surface: rgba(235, 230, 230, 0.418);
   --surface-strong: rgba(209, 188, 188, 0.3);
   --ink-0: #281f1f;
   --ink-1: #433939;
+  --ink-w: #fdfdfd;
   --muted: #484040;
   --accent: #892430;
   --accent-soft: rgba(123, 31, 42, 0.14);
@@ -86,7 +88,7 @@ h3 {
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 h2 {
@@ -96,6 +98,15 @@ h2 {
   /* font-size: clamp(1.25rem, 2.5vw, 2.5rem); */
   font-weight: 700;
   color: var(--ink-0);
+}
+
+h1 {
+  /* font-family: var(--code); */
+  /* font-size: 1.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em; */
+  margin: 0;
 }
 
 button {
@@ -147,7 +158,8 @@ img {
 .brand-mark {
   font-family: var(--brand);
   color: var(--accent);
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 350;
+  font-size: clamp(1rem, 4vw, 1.4rem);
   text-decoration: none;
   letter-spacing: 0.02em;
   padding: 0 0;
@@ -292,6 +304,13 @@ img {
   }
   .menu-button {
     display: flex;
+  }
+  .header-inner {
+    min-height: 2.5rem;
+  }
+  .menu-button {
+    width: 2.5rem;
+    height: 1.9rem;
   }
 }
 

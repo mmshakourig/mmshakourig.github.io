@@ -9,7 +9,7 @@ import {
   ScholarIcon
 } from '../components/Icons';
 
-import '../styles/Global.css';
+import '../styles/global.css';
 import '../styles/Experiences.css';
 
 

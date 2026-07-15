@@ -1,0 +1,141 @@
+/* Container Centering */
+.projects-page {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.projects-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+}
+
+/* Card Base Styles */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  aspect-ratio: 4 / 3; /* Maintain a consistent aspect ratio */
+}
+
+/* Hover Effects */
+.project-card:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Card Header */
+.card-header {
+  padding: 0.75rem 1rem;
+  font-size: clamp(12px, 1.2em, 14px);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  background: var(--surface);
+  border-bottom: 1px solid #eee;
+}
+
+/* Card Body & Background Blur */
+.card-body {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+.card-footer {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  background: var(--surface);
+  border-top: 1px solid #eee;
+}
+
+.card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: clamp(11px, 1.25vw, 13px);
+  color: var(--accent);
+  /* font-weight: 500; */
+}
+
+/* The Blurred Photo Layer */
+.card-body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--card-bg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* The requested blur */
+  transition: filter 0.3s ease;
+}
+
+.project-card:hover .card-body::before {
+  filter: blur(0px); /* Optional: clear blur on hover */
+}
+
+/* Dark Overlay for Text Readability */
+.card-body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Card Title */
+.card-title {
+  color: var(--ink-w);
+  margin: 0;
+  z-index: 2;
+  font-size: 1.4rem;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+}
+
+
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .projects-grid {  
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
