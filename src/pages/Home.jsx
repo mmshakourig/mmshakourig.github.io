@@ -42,16 +42,18 @@ function HomePage() {
 
         <div className="hero-profile">
           <img className="profile-image" src={profilePic} alt="Portrait of Mahdi Shakouri" />
-          <h1 className="name-title">{homeContent.name}</h1>
-          <div className="profile-text-group">
+          <div className="profile-text">
+            <h1 className="name-title">{homeContent.name}</h1>
+            <div className="profile-text-group">
 
-            <p className="hero-title">{homeContent.titleLines[0]}</p>
-            <p className="hero-title">{homeContent.titleLines[1]}</p>
-            
-          </div>
-          <div className="hero-subtitle">
-            <p>{homeContent.titleLines[2]}</p>
-            <p>{homeContent.titleLines[3]}</p>
+              <p className="hero-title">{homeContent.titleLines[0]}</p>
+              <p className="hero-title">{homeContent.titleLines[1]}</p>
+              
+            </div>
+            <div className="hero-subtitle">
+              <p>{homeContent.titleLines[2]}</p>
+              <p>{homeContent.titleLines[3]}</p>
+            </div>
           </div>
 
           <div className="profile-icons">
@@ -81,9 +83,9 @@ function HomePage() {
                 }}
               >
                 {/* Wrapper to align Icon and Text inline and centered together */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <IconComponent />
-                  <span style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--ink-1)' }}>{socialText}</span>
+                  <span style={{ fontSize: 'inherit', fontWeight: 'inherit', color: 'var(--ink-1)' }}>{socialText}</span>
                 </div>
               </IconButton>
             );
@@ -104,7 +106,7 @@ function HomePage() {
           </div>
           <div className="hero-summary">
             <h3># Summary</h3>
-            <ul style={{ listStyleType: 'disc', paddingLeft: '2.5rem', lineHeight: '1.6', fontSize: 'inherit', color: 'var(--ink-1)' }}>
+            <ul style={{ listStyleType: 'disc', paddingLeft: 'clamp(1rem, 8vw, 3rem)', lineHeight: 'inherit', fontSize: 'inherit', color: 'var(--ink-1)' }}>
               {homeContent.summary.map((item, index) => (
                 <li>
                   {/* only hyperlink after @ sign in the text */}

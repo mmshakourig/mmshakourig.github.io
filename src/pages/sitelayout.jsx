@@ -28,6 +28,8 @@ function SiteLayout({ children }) {
 
   return (
     <div className="site-shell">
+      
+
       <header className="site-header">
         <div className="header-inner">
           <NavLink to="/" end className="brand-mark" onClick={() => setMenuOpen(false)}>
@@ -80,7 +82,11 @@ function SiteLayout({ children }) {
         </nav>
       </aside>
 
-      <main className="site-main">{children}</main>
+      {/* <div className="site-main"> */}
+
+      <main className="page-main">{children}</main>
+
+      {/* </div> */}
 
       <footer className="site-footer">
         
@@ -142,6 +148,8 @@ function SiteLayout({ children }) {
         </div>
 
       </footer>
+
+
     </div>
   );
 }

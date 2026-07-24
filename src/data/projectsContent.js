@@ -13,7 +13,7 @@ export const projectsContent = {
     date: 'Fall 2025 - Spring 2026',
     description: 'A reinforcement learning agent trained in simulation and deployed in real-world driving scenarios.',
     image: '../../assets/projects/rccar1.jpg',
-    skills: ['Isaac Lab', 'Sim2Real', 'RL', 'Robotics', 'PPO'],
+    skills: ['Robotics', 'Isaac Lab', 'Sim2Real', 'RL', 'PPO'],
     to: '/projects/sim2real'
   },
   {
@@ -29,7 +29,7 @@ export const projectsContent = {
     date: 'Summer 2023',
     description: 'Design and implementation of an autonomous robot for navigation and task execution.',
     image: '../../assets/projects/robot1.jpg',
-    skills: ['Robotics', 'C++', 'CAD', 'Embedded Systems'],
+    skills: ['Embedded Systems', 'C++', 'CAD', 'H-Bridge', 'State Machines'],
     to: 'https://www.enph253-sharp.com/index.html'
   },
   {
