@@ -4,14 +4,14 @@ export const homeContent = {
   intro: [
     "I am a graduate student in the Department of Physics and Astronomy at the University of British Columbia, working on Translational AI Solutions in Nuclear Medicine. My research interests are in the fields of Medical Imaging, Computer Vision, and Deep Learning.",
 
-    "Previously, I graduated from the Engineering Physics program at UBC, pursuing a rigorous curriculum of mathematics, physics, electrical, and computer engineering courses. Throughout my undergrad journey, I was also a research assistant at the Center for Blood Research, ICORD, and Center for Brain Health at UBC where I worked on designing and fabricating microfluidic chips, quantifying growth of in-vitro neurons, and augmenting Parkinson's disease assessment data respectively.",
+    "Previously, I graduated from the Engineering Physics program at UBC, pursuing a rigorous curriculum of mathematics, physics, electrical, and computer engineering courses. Through undergrad, I was also a research assistant at the Center for Blood Research, International Collaboration on Repair of Discoveries (ICORD), and the Center for Brain Health at UBC where I worked on designing and fabricating microfluidic chips, quantifying growth of in-vitro neurons, and augmenting Parkinson's disease assessment data respectively.",
 
     "My passion lies at the intersection of engineering, physics, machine learning, and medical technology, with a focus on developing innovative solutions that can improve patient care and outcomes."
   ],
   summary: [
-    { text: 'Graduate Research Assistant @ ', comp: 'BC Cancer Research Institute', href: 'https://www.bccrc.ca/dept/io-programs/qurit/people/mahdi-shakouri' },
-    { text: 'Prev. Algorithms Engineer @ ', comp: 'Kardium Inc.', href: 'https://www.kardium.com/' },
-    { text: 'Teaching Assistant @ ', comp: 'UBC Dept. of Physics & Astronomy', href: 'https://www.physics.ubc.ca/' },
+    { text: 'Graduate Research Assistant @ ', comp: 'BC Cancer Research', href: 'https://www.bccrc.ca/dept/io-programs/qurit/people/mahdi-shakouri', date: '2026 - Current' },
+    { text: 'Prev. Algorithms Engineer @ ', comp: 'Kardium Inc.', href: 'https://www.kardium.com/', date: '2024 - 2025' },
+    { text: 'Teaching Assistant @ ', comp: 'UBC Dept. of Physics & Astronomy', href: 'https://www.physics.ubc.ca/', date: '2021 - Current' },
   ],
   socials: [
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/mmahdi-shakouri', icon: 'linkedin' },

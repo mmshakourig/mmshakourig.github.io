@@ -1,12 +1,12 @@
 export const projectsContent = {
   projects: [
   {
-    title: 'Moore Galaxy Collision Simulation',
+    title: 'Toomre Galactic Collision Simulation',
     date: 'Fall 2025',
     description: 'A simulation of galaxy collisions using N-body physics and visualization techniques.',
     image: '../../assets/projects/galaxy1.png',
     skills: ['N-body Simulation', 'Computational Astrophysics'],
-    to: '/projects/moore-galaxy-collision'
+    to: '/projects/galaxy'
   },
   {
     title: 'Sim2Real RL Driving Agent',
@@ -22,7 +22,7 @@ export const projectsContent = {
     description: 'A simulation of interference patterns in physics, demonstrating wave behavior and superposition.',
     image: '../../assets/projects/radio1.jpg',
     skills: ['Signal Processing', 'Electronics', 'Radiophysics'],
-    to: '/projects/rf-interference-monitor'
+    to: '/projects/rf-interference'
   },
   {
     title: 'Autonomous Robot',
@@ -38,7 +38,7 @@ export const projectsContent = {
     description: 'Design and implementation of a stepper motor controller for precise position control.',
     image: '../../assets/projects/motor1.jpg',
     skills: ['Circuit Design', 'Controls', 'Logic Programming'],
-    to: '/projects/stepper-motor-controller'
+    to: '/projects/controller'
   },
   {
     title: 'Imitation Learning Driving in Simulation',
@@ -46,7 +46,7 @@ export const projectsContent = {
     description: 'A project focused on training a driving agent using imitation learning techniques in a simulated environment.',
     image: '../../assets/projects/sim2real1.jpg',
     skills: ['Gym Gazebo', 'ROS', 'Imitation Learning'],
-    to: '/projects/imitation-learning-driving'
+    to: '/projects/'
   }
   ]
 

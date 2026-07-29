@@ -94,6 +94,10 @@ function HomePage() {
           
         </div>
         
+      <div className="transition-band-pre" aria-hidden="true">
+        <img className="img-pre" src={shirazFull} alt="" />
+      </div>
+        
         <article className="hero-right">
           <h1 className="hero-welcome"># WELCOME!</h1>
 
@@ -106,18 +110,28 @@ function HomePage() {
           </div>
           <div className="hero-summary">
             <h3># Summary</h3>
-            <ul style={{ listStyleType: 'disc', paddingLeft: 'clamp(1rem, 8vw, 3rem)', lineHeight: 'inherit', fontSize: 'inherit', color: 'var(--ink-1)' }}>
+            <ul className="summary-list">
+
               {homeContent.summary.map((item, index) => (
                 <li>
                   {/* only hyperlink after @ sign in the text */}
+
+                  <div key={index} className="summary-item">
+                  
+                  <div>
                   <span key={index}>{item.text}</span>
                   
-                  <a key={index} href={item.href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                  <a className="company-link" key={index} href={item.href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
                     {item.comp}
                   </a>
-              
+                  </div>
+                  
+                  <span className="company-date">{item.date}</span>
+                  </div>
+                  
                 </li>
               ))}
+              
             </ul>
           </div>
         </article>
@@ -130,7 +144,7 @@ function HomePage() {
 
       <section className="highlights-section" aria-labelledby="highlights-title">
         <div className="section-header">
-          <h3># Highlights</h3>
+          <h3 className='highlight-t'># Highlights</h3>
         </div>
 
       {/* change the grid from 4x2 to 3x2 */}
@@ -145,7 +159,7 @@ function HomePage() {
               <p className="hero-subtitle"> {item.sneakPeak} </p>
               <a href={item.href} className="card-link">
                 <span>Open page</span>
-                <ArrowOutwardIcon className="card-link-icon" />
+                <ArrowOutwardIcon className="card-link-icon" style={{ fontSize: 'inherit' }} />
               </a>
             </article>
           ))}

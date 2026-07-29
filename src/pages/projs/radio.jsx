@@ -3,13 +3,13 @@ import '../../styles/global.css';
 import '../../styles/proj.css';
 import { useEffect, useState } from 'react';
 
-import { teamMembers, toolsMap, slideshowImages, reportLink} from '../../data/projs/sim2real';
+import { teamMembers, toolsMap, slideshowImages, reportLink, projectDetails} from '../../data/projs/radio';
 
 
 
 
 
-function Sim2Real() {
+function Radio() {
   
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -29,12 +29,13 @@ function Sim2Real() {
       <div className='p-header'>
 
         <div className='p-discript'>
-          <h2 className='p-title'>Sim2Real RL Driving Agent</h2>
-          <p>Bridging the gap between simulation and reality in autonomous driving</p>
+          <h2 className='p-title'>{projectDetails.title}</h2>
+          <p>{projectDetails.problem}</p>
+          <p>{projectDetails.solution}</p>  
         </div>
 
         <div className='p-right'>
-          <h2 className='p-gal'>Galary</h2>
+            
           <div className="p-right slideshow-container">
             {slideshowImages.map((src, index) => (
               <img
@@ -101,15 +102,6 @@ function Sim2Real() {
         
       </div>
 
-        {/* <p>
-          This project focuses on developing a reinforcement learning (RL) agent that can be trained in a simulated environment and then deployed in real-world driving scenarios. The goal is to bridge the gap between simulation and reality, enabling the agent to learn effective driving policies that can be transferred to real vehicles.
-        </p>
-        <p>
-          The project involves using Isaac Lab for simulation, implementing Sim2Real techniques, and applying reinforcement learning algorithms such as Proximal Policy Optimization (PPO). The agent is trained to navigate various driving tasks, including lane following, obstacle avoidance, and traffic sign recognition, in a controlled simulated environment before being tested in real-world conditions.
-        </p>
-        <p>
-          Key skills and technologies used in this project include Isaac Lab, Sim2Real methodologies, reinforcement learning, robotics, and the PPO algorithm. The project aims to demonstrate the effectiveness of transferring learned policies from simulation to real-world applications, contributing to advancements in autonomous driving and robotics.
-        </p> */}
 
 
     </section>
@@ -117,4 +109,4 @@ function Sim2Real() {
   );
 }
 
-export default Sim2Real;
+export default Radio;
