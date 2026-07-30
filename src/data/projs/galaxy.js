@@ -29,10 +29,10 @@ export const projectDetails = {
   date: 'Fall 2025 - Spring 2026',
   problem: 'A simulation of galaxy collisions using N-body physics and visualization techniques.',
   solution: 'The problem of simulating galaxy collisions is a complex one, as it involves modeling the gravitational interactions between a large number of stars and other celestial bodies. Traditional methods of simulating these interactions can be computationally expensive and time-consuming, making it difficult to accurately model the dynamics of galaxy collisions over long periods of time.',
-  image: '../../assets/projects/rccar1.jpg',
+  image: 'assets/projects/rccar1.jpg',
 };
 
 export const teamMembers = [
-   { name: "Mahdi Shakouri", linkedin: "https://www.linkedin.com/in/mmahdi-shakouri/", img:"../../assets/dome.jpg" },
+   { name: "Mahdi Shakouri", linkedin: "https://www.linkedin.com/in/mmahdi-shakouri/", img:"assets/dome.jpg" },
 
   ]

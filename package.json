@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "base": "/portfolio/",
   "homepage": "https://github.io",
   "scripts": {
     "dev": "vite",

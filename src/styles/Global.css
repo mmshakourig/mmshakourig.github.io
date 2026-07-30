@@ -107,7 +107,7 @@ ul {
 p {
   font-family: var(--body);
   font-size: inherit;
-  font-weight: 395;
+  font-weight: 300;
 }
 
 span {
@@ -183,6 +183,7 @@ button {
 a {
   font: inherit;
   color: inherit;
+  font-weight: inherit;
 }
 
 img {
@@ -243,7 +244,7 @@ img {
   text-decoration: none;
   color: var(--ink-1);
   padding: 0.7rem 0;
-  font-size: clamp(12px, 1.3vw, 16px);
+  font-size: clamp(12px, 1.35vw, 16px);
   font-weight: 500;
   transition: color 180ms ease, background-color 180ms ease;
 }

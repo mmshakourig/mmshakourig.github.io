@@ -21,15 +21,16 @@ export const projectDetails = {
   title: 'Sim2Real RL Driving Agent',
   date: 'Fall 2025 - Spring 2026',
 
-  description: 'A reinforcement learning agent trained in simulation and deployed in real-world driving scenarios.',
-  image: '../../assets/projects/rccar1.jpg',
+  problem: 'Autonomous driving in the commercial sectors is a complex and challenging task that requires the integration of various technologies, including agent architectures, machine learning policies, and robotics. One of the main challenges in developing autonomous driving agents is the need for large amounts of data to train the underlying models. Collecting real-world data is time-consuming, expensive, and potentially dangerous. As such, training often heavily relies on simulated environments, which can introduce a gap between the simulated and real-world scenarios.',
+  solution: 'To address this challenge, sponsored by Wayve Technologies Ltd., we developed a reinforcement learning (RL) sim2real platform that allows for policy training in simulation and deployment in real-world driving scenarios at an micro RC car 1:64 scale. The physical platform consists of multiple RC cars and any 3D track can be deployed on the platform for more realistic testing and training in the real world. The system also entails a manually controllable RC car that can interact with automated the RL agents.',
+  image: 'assets/projects/rccar1.jpg',
 };
 
 export const teamMembers = [
-  { name: "Sasan Ghasaei", linkedin: "https://www.linkedin.com/in/sasanghasaei/", img: "../../assets/dome.jpg" },
-  { name: "William Gibbs", linkedin: "https://www.linkedin.com/in/william-gibbs-727620278/", img: "../../assets/dome.jpg" },
-  { name: "Felipe Garavelli", linkedin: "https://www.linkedin.com/in/felipegaravelli/", img: "../../assets/dome.jpg" },
-  { name: "Itai Boss", linkedin: "https://www.linkedin.com/in/itaiboss/", img: "../../assets/dome.jpg" },
-  { name: "Mahdi Shakouri", linkedin: "https://www.linkedin.com/in/mmahdi-shakouri/", img:"../../assets/dome.jpg" },
+  { name: "Sasan Ghasaei", linkedin: "https://www.linkedin.com/in/sasanghasaei/", img: "assets/dome.jpg" },
+  { name: "William Gibbs", linkedin: "https://www.linkedin.com/in/william-gibbs-727620278/", img: "assets/dome.jpg" },
+  { name: "Felipe Garavelli", linkedin: "https://www.linkedin.com/in/felipegaravelli/", img: "assets/dome.jpg" },
+  { name: "Itai Boss", linkedin: "https://www.linkedin.com/in/itaiboss/", img: "assets/dome.jpg" },
+  { name: "Mahdi Shakouri", linkedin: "https://www.linkedin.com/in/mmahdi-shakouri/", img:"assets/dome.jpg" },
 
   ]

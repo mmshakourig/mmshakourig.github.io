@@ -27,44 +27,21 @@ function Galaxy() {
       <div className='p-header'>
 
         <div className='p-discript'>
+
           <h2 className='p-title'>{projectDetails.title}</h2>
-          <p>{projectDetails.problem}</p>
-          <p>{projectDetails.solution}</p>  
-        </div>
-
-        <div className='p-right'>
-            
-          <div className="p-right slideshow-container">
-            {slideshowImages.map((src, index) => (
-              <img
-                key={src}
-                src={src}
-                alt={`Project slide ${index + 1}`}
-                className={`slide ${index === currentSlide ? 'active' : ''}`}
-              />
-            ))}
+          <div>
+            <span className='p-pr'>
+              Problem: </span>
+            <a>{projectDetails.problem}</a>
           </div>
-          
-        </div>
+          <div>
+            <span className='p-pr'>
+              Solution: </span>
+            <a>{projectDetails.solution}</a>
+          </div>
         
-        <div className='p-tools'>
-          <h2 className='p-subtitle'>Tools & Tech</h2>
-          <div className='p-tools-list'>
-            {Object.keys(toolsMap).map((tool, index) => {
-              const ToolIcon = toolsMap[tool];
-              return (
-                <div key={index} className='project-tool-item'>
-                  <ToolIcon className="tool-icon"/>
-                  <span>{tool}</span>
-                </div>
-              );
-            }
-            )}
-          </div>
-        </div>
-
-        <div className='p-team'>
-          <h2 className='p-subtitle'>The Team</h2>
+        <div>
+          <span className='p-pr'>The Team:</span>
           <div className="team-members">
             {teamMembers.map((member, index) => (
               <a 
@@ -81,6 +58,40 @@ function Galaxy() {
           </div>
         </div>
 
+        <div>
+        <span className='p-pr'>Tools & Tech:</span>
+        <div className='p-tools-list'>
+          {Object.keys(toolsMap).map((tool, index) => {
+            const ToolIcon = toolsMap[tool];
+            return (
+              <div key={index} className='project-tool-item'>
+                <ToolIcon className="tool-icon"/>
+                <span>{tool}</span>
+              </div>
+            );
+          }
+          )}
+        </div>
+        </div>
+
+        </div>
+
+        <div className='p-right'>
+          <h2 className='p-gal'>Galary</h2>
+          <div className="slideshow-container">
+            {slideshowImages.map((src, index) => (
+              <img
+                key={src}
+                src={src}
+                alt={`Project slide ${index + 1}`}
+                className={`slide ${index === currentSlide ? 'active' : ''}`}
+              />
+            ))}
+          </div>
+        
+        </div>
+        
+        
       </div>
 
       <div className='project-report'>
