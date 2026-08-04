@@ -1,3 +1,5 @@
+import { assetUrl } from '../utils/assetUrl';
+
 export const homeContent = {
   name: 'Mahdi Shakouri',
   titleLines: ['Medical Physics', 'Engineering Physics', 'BC Cancer Research Institute', 'University of British Columbia'],
@@ -20,7 +22,7 @@ export const homeContent = {
     { name: 'GitHub', href: 'https://github.com/mmshakourig', icon: 'github' },
     { name: 'Scholar', href: 'https://scholar.google.com/citations?user=iFep8KoAAAAJ&hl=en&authuser=1&oi=ao', icon: 'scholar' },
     // resume is a pdf file in the assets folder, link to it
-    { name: 'Resume', href: '/assets/resume.pdf', icon: 'resume' },
+    { name: 'Resume', href: assetUrl('resume.pdf'), icon: 'resume' },
     { name: 'Profile', href: 'https://www.bccrc.ca/dept/io-programs/qurit/people/mahdi-shakouri', icon: 'profile' } // Add a profile link
   ],
   icons: {
