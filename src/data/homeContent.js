@@ -11,7 +11,8 @@ export const homeContent = {
   summary: [
     { text: 'Graduate Research Assistant @ ', comp: 'BC Cancer Research', href: 'https://www.bccrc.ca/dept/io-programs/qurit/people/mahdi-shakouri', date: '2026 - Current' },
     { text: 'Prev. Algorithms Engineer @ ', comp: 'Kardium Inc.', href: 'https://www.kardium.com/', date: '2024 - 2025' },
-    { text: 'Teaching Assistant @ ', comp: 'UBC Dept. of Physics & Astronomy', href: 'https://www.physics.ubc.ca/', date: '2021 - Current' },
+    { text: 'Teaching Assistant @ ', comp: 'UBC Dept. of Physics & Astronomy', href: 'https://www.physics.ubc.ca/', date: '2023 - Current' },
+    { text: 'Match Official @ ', comp: 'Volleyball Canada', href: 'https://volleyball.ca/en/development/referee', date: '2018 - Current' },
   ],
   socials: [
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/mmahdi-shakouri', icon: 'linkedin' },

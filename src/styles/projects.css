@@ -1,11 +1,13 @@
 /* Container Centering */
 .projects-page {
   display: flex;
-  gap: clamp(.75rem, 3vw, 1.5rem);
+  gap: clamp(.75rem, 2.5vw, 1.5rem);
   justify-content: start;
   align-items: center;
   min-height: 60vh;
   padding: 1rem 1rem;
+  /* padding: .25rem; */
+
   flex-direction: column;
 }
 
@@ -138,5 +140,10 @@
 @media (max-width: 640px) {
   .projects-grid {
     grid-template-columns: 1fr;
+    padding: 0 .6rem;
+  }
+  .card-header, .card-footer {
+    padding: 0.5rem 0.75rem;
+    font-size: clamp(12px, .8rem, 13px);
   }
 }

@@ -1,7 +1,8 @@
 export const reflectionEntries = [
   {
     id: 1,
-    title: 'One: End',
+    num: 'one:',
+    title: 'Beautiful Echos, Bright Horizons',
     date: 'May 2026',
     body: [
       'This piece reflects on completing a demanding cycle of academic and technical work.',
@@ -11,7 +12,8 @@ export const reflectionEntries = [
   },
   {
     id: 2,
-    title: 'Two: Gratitude',
+    num: 'two:',
+    title: 'Gratitude as the Pinnacle of Reflection',
     date: 'June 2026',
     body: [
       'Progress often came from collaborative moments and thoughtful feedback.',
@@ -20,10 +22,21 @@ export const reflectionEntries = [
   },
   {
     id: 3,
-    title: 'Five: New',
+    num: 'three:',
+    title: 'A Look Back at Engineering Physics',
     date: 'July 2026',
     body: [
       'A new phase begins with clearer boundaries, sharper goals, and sustainable pace.'
+    ]
+  },
+  {
+    id: 4,
+    num: 'four:',
+    title: 'Mentorship: Stretching Branches & Deepening Roots',
+    date: 'August 2026',
+    body: [
+      'The journey of discovery is often marked by uncertainty and the unknown.',
+      'Embracing this uncertainty has led to unexpected insights and growth.'
     ]
   }
 ];
