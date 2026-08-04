@@ -270,6 +270,7 @@ img {
 }
 .nav-link-active {
   color: var(--accent);
+  font-weight: 500;
 }
 .nav-link-active::after {
   background: var(--accent);
