@@ -1,4 +1,4 @@
-import {projectsContent} from '../data/projectsContent';
+import {projectsContent} from '/src/data/projectsContent';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -46,7 +46,7 @@ function ProjectsPage() {
                 to={project.to}
                 target={project.to.startsWith('http') ? '_blank' : '_self'}
                 className="card-body" 
-                style={{ '--card-bg': `url(${slideshowImages[index]})` }}
+                style={{ '--card-bg': `url(${project.image})` }}
               >
               
               <h3 className="card-title">{project.title}</h3>

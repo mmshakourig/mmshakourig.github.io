@@ -19,7 +19,7 @@
   box-shadow: var(--shadow);
 }
 .project-report {
-  height: clamp(300px, 95vh, 1500px);
+  height: clamp(300px, 95vh, 2000px);
 }
 
 .p-discript {
@@ -144,7 +144,7 @@ img {
 .member-img {
   width: clamp(40px, 4vw, 60px);
   height: clamp(40px, 4vw, 60px);
-  border-radius: 50%;
+  border-radius: 25%;
   /* border: 2px solid #781d28; */
   object-fit: cover;
   transition: transform .5s ease;

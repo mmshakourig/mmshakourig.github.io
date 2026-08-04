@@ -95,7 +95,7 @@ function Galaxy() {
       </div>
 
       <div className='project-report'>
-        <h2 className='p-subtitle'>Detailed Report</h2>
+        <h2 className='p-subtitle'>Details</h2>
         {/* don't allow the iframe to allow download */}
         <iframe
           title="Sim2Real Project Report"

@@ -227,7 +227,7 @@ img {
   font-family: var(--brand);
   color: var(--accent);
   font-weight: 350;
-  font-size: clamp(1rem, 4vw, 1.4rem);
+  font-size: clamp(1rem, 4vw, 1.25rem);
   text-decoration: none;
   letter-spacing: 0.02em;
   padding: 0 0;
@@ -244,8 +244,8 @@ img {
   text-decoration: none;
   color: var(--ink-1);
   padding: 0.7rem 0;
-  font-size: clamp(12px, 1.35vw, 16px);
-  font-weight: 500;
+  font-size: clamp(12px, 1.35vw, 15.5px);
+  font-weight: 400;
   transition: color 180ms ease, background-color 180ms ease;
 }
 .nav-link::after {
