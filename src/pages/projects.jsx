@@ -13,10 +13,19 @@ import { Grid, IconButton } from '@mui/material';
 
 import { NavLink } from 'react-router-dom';
 
-import '../styles/global.css';
-import '../styles/projects.css';
+import '/src/styles/global.css';
+import '/src/styles/projects.css';
 
+import gal from '/assets/projects/galaxy1.png'
+import rl from '/assets/projects/rccar1.jpg'
+import rad from '/assets/projects/radio1.jpg'
+import rob from '/assets/projects/robot1.jpg'
+import mot from '/assets/projects/motor1.jpg'
+import imi from '/assets/projects/imitate1.png'
 
+export const slideshowImages = [
+  gal, rl, rad, rob, mot, imi
+  ];
 
 
 
@@ -37,7 +46,7 @@ function ProjectsPage() {
                 to={project.to}
                 target={project.to.startsWith('http') ? '_blank' : '_self'}
                 className="card-body" 
-                style={{ '--card-bg': `url(${project.image})` }}
+                style={{ '--card-bg': `url(${slideshowImages[index]})` }}
               >
               
               <h3 className="card-title">{project.title}</h3>
