@@ -245,7 +245,7 @@ img {
   color: var(--ink-1);
   padding: 0.7rem 0;
   font-size: clamp(12px, 1.35vw, 15.5px);
-  font-weight: 400;
+  font-weight: 500;
   transition: color 180ms ease, background-color 180ms ease;
 }
 .nav-link::after {
@@ -270,7 +270,6 @@ img {
 }
 .nav-link-active {
   color: var(--accent);
-  font-weight: 500;
 }
 .nav-link-active::after {
   background: var(--accent);

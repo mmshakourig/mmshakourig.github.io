@@ -7,7 +7,6 @@
   min-height: 60vh;
   padding: 1rem 1rem;
   /* padding: .25rem; */
-
   flex-direction: column;
 }
 
@@ -23,8 +22,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(18px, 3.5vw, 50px);
   /* width: 100%; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
   min-height: 60vh;
+  margin-bottom: 1.5vh;
+
 }
 
 /* Card Base Styles */

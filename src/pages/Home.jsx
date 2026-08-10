@@ -73,6 +73,7 @@ function HomePage() {
                   padding:'2px', // Added padding so box-shadow looks clean around text+icon
                   margin:0,
                   fontSize: 'inherit',
+                  animationDelay: `${social.idx * 1}s`,
                   borderRadius: '4px', // Keeps the box-shadow cleanly squared/rounded
                   transition: 'all 0.2s ease-in-out', // Smooths out the hover effect
                   '&:hover': { 
@@ -83,7 +84,7 @@ function HomePage() {
                 }}
               >
                 {/* Wrapper to align Icon and Text inline and centered together */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <div className="profile-icon" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <IconComponent />
                   <span style={{ fontSize: 'inherit', fontWeight: 'inherit', color: 'var(--ink-1)' }}>{socialText}</span>
                 </div>

@@ -71,6 +71,18 @@
   object-fit: cover;
   /* margin-bottom: 0.75rem; */
 }
+
+@keyframes spawnBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .profile-icons {
   display: grid;
   /* create a 2-column grid */
@@ -84,6 +96,10 @@
   /* font-weight: 100; */
   /* font-size: 1px;
   margin-top: clamp(0.1rem, 1vw, 1rem); */
+}
+.profile-icon {
+  animation: spawnBottom 0.6s ease-out forwards;
+  opacity: 0; /* Start hidden until animation begins */
 }
 
 .hero-right {

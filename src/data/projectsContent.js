@@ -46,7 +46,7 @@ export const projectsContent = {
     title: 'Imitation Learning Driving in Simulation',
     date: 'Winter 2024',
     description: 'A project focused on training a driving agent using imitation learning techniques in a simulated environment.',
-    image: assetUrl('projects/rccar1.jpg'),
+    image: assetUrl('projects/imitate1.png'),
     skills: ['Gym Gazebo', 'ROS', 'Imitation Learning'],
     to: '/projects/'
   }

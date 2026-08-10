@@ -17,13 +17,13 @@ export const homeContent = {
     { text: 'Match Official @ ', comp: 'Volleyball Canada', href: 'https://volleyball.ca/en/development/referee', date: '2018 - Current' },
   ],
   socials: [
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/mmahdi-shakouri', icon: 'linkedin' },
-    { name: 'Email', href: 'mailto:mahdi.shakouri@ubc.ca', icon: 'email' },
-    { name: 'GitHub', href: 'https://github.com/mmshakourig', icon: 'github' },
-    { name: 'Scholar', href: 'https://scholar.google.com/citations?user=iFep8KoAAAAJ&hl=en&authuser=1&oi=ao', icon: 'scholar' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/mmahdi-shakouri', icon: 'linkedin', idx: 0 },
+    { name: 'Email', href: 'mailto:mahdi.shakouri@ubc.ca', icon: 'email', idx: 1 },
+    { name: 'GitHub', href: 'https://github.com/mmshakourig', icon: 'github', idx: 2 },
+    { name: 'Scholar', href: 'https://scholar.google.com/citations?user=iFep8KoAAAAJ&hl=en&authuser=1&oi=ao', icon: 'scholar', idx: 3 },
     // resume is a pdf file in the assets folder, link to it
-    { name: 'Resume', href: assetUrl('resume.pdf'), icon: 'resume' },
-    { name: 'Profile', href: 'https://www.bccrc.ca/dept/io-programs/qurit/people/mahdi-shakouri', icon: 'profile' } // Add a profile link
+    { name: 'Resume', href: assetUrl('resume.pdf'), icon: 'resume', idx: 4 },
+    { name: 'Profile', href: 'https://www.bccrc.ca/dept/io-programs/qurit/people/mahdi-shakouri', icon: 'profile', idx: 5 } // Add a profile link
   ],
   icons: {
     linkedin: 'linkedin',

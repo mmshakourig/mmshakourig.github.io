@@ -14,7 +14,7 @@
 
 .ref-grid {
   display: grid;
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 2fr 7fr;
   gap: clamp(.75rem, 3vw, 1.5rem);
   justify-content: start;
   align-items: center;
@@ -37,14 +37,14 @@
   /* flex: 1; */
   align-self: stretch;
   align-items: center;
-  padding: clamp(.75rem, 2.5vw, 2rem);
+  padding: clamp(.75rem, 2.2vw, 2rem);
   box-shadow: var(--shadow);
   text-align: center;
 }
 
 .r-sidebar-title {
   font-family: var(--heading);
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.8vw, 20px);
   color: var(--accent);
   padding: clamp(.25rem, 1vw, .5rem);
   text-align: center;
@@ -59,7 +59,7 @@
 }
 .r-title {
   font-family: var(--heading);
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(14px, 1.5vw, 18px);
   color: var(--accent);
   text-align: center;
 }
