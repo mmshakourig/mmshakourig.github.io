@@ -34,6 +34,6 @@ export const projectDetails = {
 };
 
 export const teamMembers = [
-   { name: "Mahdi Shakouri", linkedin: "https://www.linkedin.com/in/mmahdi-shakouri/", img: assetUrl('dome.jpg') },
+   { name: "Mahdi Shakouri", linkedin: "https://www.linkedin.com/in/mmahdi-shakouri/", img: assetUrl('home/profilepic.jpg') },
 
   ]

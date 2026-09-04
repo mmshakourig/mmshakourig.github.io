@@ -90,7 +90,8 @@
   justify-content: space-between;
   justify-items: start;
   justify-self: space-between;
-  font-size: clamp(12px, 1.5vw, 16px);
+  font-size: clamp(12px, 1vw, 16px);
+  font-weight: 300;
   column-gap: clamp(1rem, 2vw, 1.2rem);
   row-gap: clamp(0.2rem, 1.5vw, 0.75rem);
   /* font-weight: 100; */

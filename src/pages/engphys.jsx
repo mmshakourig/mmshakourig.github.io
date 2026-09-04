@@ -20,11 +20,9 @@ function EngPhysPage() {
       <h3 className="hero-welcome"># Engineering Physics</h3>
       
       <div className="e-contents">
-      <h2> Work in progress ...</h2>
+      <h1> Work in progress ...</h1>
 
-      <p className="hero-about">My undergraduate degree in Engineering Physics has 
-        
-          provided me with a strong foundation in both engineering and physics principles. This unique combination of skills allows me to approach complex problems from multiple perspectives, making me a versatile and innovative engineer. </p>
+      <p className="hero-about">My vision for this page is to become a repository of course content and resources for the Engineering Physics program at UBC</p>
 
       </div>
 

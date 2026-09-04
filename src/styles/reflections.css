@@ -4,7 +4,7 @@
   align-items: center;
   gap: clamp(.75rem, 2.5vw, 1.5rem);
   /* justify-content: stretch; */
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   /* min-height: 85vh; */
   padding: 1rem 1rem;
@@ -37,7 +37,7 @@
   /* flex: 1; */
   align-self: stretch;
   align-items: center;
-  padding: clamp(.75rem, 2.2vw, 2rem);
+  padding: clamp(1rem, 2.5vw, 3rem);
   box-shadow: var(--shadow);
   text-align: center;
 }
@@ -46,20 +46,19 @@
   font-family: var(--heading);
   font-size: clamp(16px, 1.8vw, 20px);
   color: var(--accent);
-  padding: clamp(.25rem, 1vw, .5rem);
   text-align: center;
 }
 
 .r-num {
   font-family: var(--mono);
-  font-size: clamp(12px, 1.5vw, 16px);
+  font-size: clamp(12px, 1.5vw, 15px);
   color: var(--muted);
   text-transform: uppercase;
   margin-right: 0.25rem;
 }
 .r-title {
   font-family: var(--heading);
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(13px, 1.5vw, 16px);
   color: var(--accent);
   text-align: center;
 }
@@ -67,7 +66,7 @@
 .r-article {
   display: flex;
   flex-direction: column;
-  gap: clamp(.75rem, 3vw, 1.5rem);
+  gap: clamp(.75rem, 1.25vw, 1.75rem);
   justify-content: start;
   background: var(--surface);
   border-radius: var(--radius);
@@ -75,8 +74,37 @@
   /* flex: 1; */
   align-self: stretch;
   /* align-items: center; */
-  padding: clamp(.75rem, 2.5vw, 2rem);
+  padding: clamp(1rem, 2.5vw, 3rem);
   box-shadow: var(--shadow);
+}
+
+.article-meta, .article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: clamp(12px, 1.5vw, 16px);
+  font-family: var(--mono);
+  color: var(--muted);
+  letter-spacing: 0.02rem;
+  /* text-transform: uppercase; */
+}
+.article-title {
+  font-family: var(--heading);
+  font-size: clamp(18px, 2.5vw, 24px);
+  color: var(--accent);
+  text-align: center;
+  line-height: 1;
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+  letter-spacing: -0.02em;
+}
+
+.article-content {
+  display: flex;
+  font-size: clamp(12.5px, 1.25vw, 16.5px);
+  line-height: 1.5;
+  flex-direction: column;
+  gap: clamp(.25rem, 1vw, .5rem);
 }
 
 

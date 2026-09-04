@@ -1,5 +1,7 @@
 
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import { Grid, IconButton } from '@mui/material';
 // import three dots icon
@@ -32,7 +34,7 @@ function ReflectionsPage() {
 
           {reflectionEntries.map((entry, index) => (
             <div className="r-cont-entry" key={index}>
-              <span className="r-num">{entry.num}</span>
+              <div className="r-num">{entry.num}</div>
               <span className="r-title">{entry.title}</span>
               {/* <p className="r-sidebar-date">{entry.date}</p> */}
               </div>
@@ -42,7 +44,32 @@ function ReflectionsPage() {
 
         </div>
 
+        
         <div className="r-article">
+          <div className="article-header">
+            <div className="article-meta">
+              <span>{reflectionEntries[0].num}</span>
+              <span>{reflectionEntries[0].date}</span>
+            </div>
+            <h2 className="article-title">{reflectionEntries[0].title}</h2>
+          </div>
+          <div >
+            {reflectionEntries[0].body.map((paragraph, index) => (
+              <p className="hero-about" key={index}>
+                {paragraph}
+              </p>
+            ))}
+          </div>
+          <div className="article-footer">
+              <IconButton aria-label="previous reflection" style={{ fontSize: 'inherit' }}>
+                <ArrowBackIcon />
+                <span>Previous</span>
+              </IconButton>
+              <IconButton aria-label="next reflection" style={{ fontSize: 'inherit' }}>
+                <span>Next</span>
+                <ArrowForwardIcon />
+              </IconButton>
+          </div>
         </div>
       
 

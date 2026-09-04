@@ -28,10 +28,10 @@ export const projectDetails = {
 };
 
 export const teamMembers = [
-  { name: "Sasan Ghasaei", linkedin: "https://www.linkedin.com/in/sasanghasaei/", img: assetUrl('dome.jpg') },
-  { name: "William Gibbs", linkedin: "https://www.linkedin.com/in/william-gibbs-727620278/", img: assetUrl('dome.jpg') },
-  { name: "Felipe Garavelli", linkedin: "https://www.linkedin.com/in/felipegaravelli/", img: assetUrl('dome.jpg') },
+  { name: "Sasan Ghasaei", linkedin: "https://www.linkedin.com/in/sasanghasaei/", img: assetUrl('projects/sasan.jpg') },
+  { name: "William Gibbs", linkedin: "https://www.linkedin.com/in/william-gibbs-727620278/", img: assetUrl('projects/will.jpg') },
+  { name: "Felipe Garavelli", linkedin: "https://www.linkedin.com/in/felipegaravelli/", img: assetUrl('projects/felipe.jpeg') },
   { name: "Itai Boss", linkedin: "https://www.linkedin.com/in/itaiboss/", img: assetUrl('dome.jpg') },
-  { name: "Mahdi Shakouri", linkedin: "https://www.linkedin.com/in/mmahdi-shakouri/", img: assetUrl('dome.jpg') },
+  { name: "Mahdi Shakouri", linkedin: "https://www.linkedin.com/in/mmahdi-shakouri/", img: assetUrl('home/profilepic.jpg') },
 
   ]

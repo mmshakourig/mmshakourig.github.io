@@ -13,7 +13,7 @@
 .e-contents {
   display: flex;
   flex-direction: column;
-  gap: clamp(.75rem, 4vw, 5rem);
+  gap: clamp(.75rem, 4vw, 3rem);
   justify-content: start;
   background: var(--surface);
   border-radius: var(--radius);
@@ -21,6 +21,7 @@
   /* flex: 1; */
   /* align-self: stretch; */
   align-items: center;
-  padding: 3rem;
+  padding: 5rem;
+  font-size: clamp(12px, 1.5vw, 10px);
   box-shadow: var(--shadow);
 }
